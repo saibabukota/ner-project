@@ -1,0 +1,116 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdiministratorMasterPage.master.cs" Inherits="Adminstrator_AdiministratorMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 79px;
+        }
+        body
+        {
+        	background-image:url("../Images/powerpoint-backgrounds-templates copyBA.JPG")
+       
+        	}
+        
+    </style>
+</head>
+<body background="../Images/2226532003645e0c188bye6_q7TMtKq8qyXf.jpg" Width="100%">
+    <form id="form1" runat="server">
+    <table cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" Height="105px" 
+                    ImageUrl="~/Images/powerpoint-backgrounds-templatesS copy.JPG" 
+                    Width="100%" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" Height="39px" Orientation="Horizontal" 
+                    Width="100%" DynamicHorizontalOffset="2" 
+                    Font-Names="Times New Roman" Font-Size="Large" ForeColor="Black" 
+                    StaticSubMenuIndent="10px" StaticEnableDefaultPopOutImage="False">
+                    <StaticMenuStyle BackColor="#FFFFCC" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" 
+                        BackColor="White" BorderStyle="Dotted" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Adminstrator/AdminHomePage.aspx" Text="Home" 
+                            Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Adminstrator/AdminMyProfilePage.aspx" 
+                            Text="My Profile" Value="My Profile"></asp:MenuItem>
+                        <asp:MenuItem Text="Museums" Value="Museums">
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminAddMuseumsPage.aspx" 
+                                Text="Add Museums" Value="Add Museums"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminViewMuseumsPage.aspx" 
+                                Text="View Museums" Value="View Museums"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Users" Value="Users">
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminAddUseresPage.aspx" 
+                                Text="Add Users" Value="Add Users"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminViewUsersPage.aspx" 
+                                Text="View Users" Value="View Users"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Areas" Value="Areas">
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminAddAreasPage.aspx" 
+                                Text="Add Areas" Value="Add Areas"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminViewAreaPage.aspx" 
+                                Text="View Areas" Value="View Areas"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="AreaTypes" Value="AreaTypes">
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminAddAreaTypesPage.aspx" 
+                                Text="Add areaTypes" Value="Add areaTypes"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminViewAreaTypesPage.aspx" 
+                                Text="View AreaTypes" Value="View AreaTypes"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Controls" Value="Controls">
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminAddControlsPage.aspx" 
+                                Text="Add Controls" Value="Add Controls"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Adminstrator/AdminViewControlsPage.aspx" 
+                                Text="View Controls" Value="View Controls"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/LoginPage.aspx" Text="Log Out" Value="Log Out">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <marquee><asp:Label ID="Label1" runat="server"  
+                    ForeColor="Red" Font-Names="Times New Roman" Font-Size="X-Large" 
+                    style="color: #FFFFFF" ></asp:Label></marquee>
+           
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <marquee><asp:Image ID="Image2" runat="server" Height="39px" 
+                    ImageUrl="~/Images/SAD.GIF" /></marquee>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
